@@ -1,0 +1,13 @@
+开机按F7可以直接选择boot方式为U盘， 按F2可以进入BIOS界面
+
+机器：未来人来X611， BIOS界面未改动任何设置
+
+在SSD上划分了4G空闲空间，用于Ubuntu 的 \boot 分区
+
+在HDD上划分了200G空闲空间，用于Ubuntu 的 \home+ \ + swap 分区
+
+划分分区时启动引导硬盘选的整块 HDD
+
+最终启动时是Ubuntu引导 Windows启动，默认启动Ubuntu
+
+但可以在开机时按F7选择Ubuntu或Windows
