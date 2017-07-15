@@ -1,0 +1,9 @@
+JDK安装按网上教程
+
+环境变量配置按网上教程
+
+此时JAVA -VERSION JAVAC-VERSION 命令均能起作用
+
+但是eclipse仍然无法添加 $JAVA_HOME jre 的软链接
+
+解决办法：重新启动一次系统即可。
