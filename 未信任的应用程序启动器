@@ -1,0 +1,28 @@
+在设置 XXX.desktop 中遇到
+
+cd 桌面
+
+sudo touch eclipse.desktop
+
+sudo vim eclipse.desktop
+
+在VIM中输入，路径自定义
+[Desktop Entry]
+Encoding=UTF-8
+Name=eclipse
+Comment=Eclipse IDE
+Exec=/home/Android/eclipse/eclipse
+Icon=/home/android/eclipse/icon.xpm
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Application;Development;
+
+保存后仍然无法打开，提示未信任的应用程序启动器;
+
+解决：
+su 更换成root权限
+在root权限下输入 chmod -R 777 '/home/bjx/XX-Net-3.2.7/XX-Net.desktop'
+路径可以直接把桌面的图标拖到终端里，路径会自动生成
+
+完美解决
