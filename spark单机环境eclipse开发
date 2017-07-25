@@ -1,0 +1,7 @@
+1 下载eclipes scala插件
+2 下载spark
+3 参考http://blog.csdn.net/xummgg/article/details/50651867
+
+注意：spark 2.2.0版本后没有assembly jar，可以导入spark lib下的所有jar尝试，具体依赖有待考证
+     若警告多个scala library，可以运行，但是也可以移除插件自带的library库，消除警告
+     在scala-container里的property属性中选择要使用的scala版本解决版本匹配问题，插件自带了4个版本可供选择
