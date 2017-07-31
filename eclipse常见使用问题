@@ -1,0 +1,4 @@
+1`  打开报error，please reference the log ...
+      删除workspace目录下的.metadata文件，解决。此方法会清楚掉workspace下的所有工程目录和eclipse的设置，需要重新导入工程
+2`  每次自动更新插件，速度N慢，而且都是些没用的更新
+      window->prefences->install/update 取消勾选自动更新
