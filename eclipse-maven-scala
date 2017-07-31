@@ -1,0 +1,5 @@
+http://www.2cto.com/net/201608/535543.html
+
+注意：右键工程,configure,add scala nature
+     在plugins标签最外层添加<pluginManagement></pluginManagement>
+     
