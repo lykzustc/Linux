@@ -1,0 +1,30 @@
+1`  打开报error，please reference the log ...
+      删除workspace目录下的.metadata文件，解决。此方法会清楚掉workspace下的所有工程目录和eclipse的设置，需要重新导入工程
+2`  每次自动更新插件，速度N慢，而且都是些没用的更新
+      window->prefences->install/update 取消勾选自动更新
+3`  maven 项目报错 ...failure to transfer org.apache.maven.plugins...
+    错误信息出现在pom头的project标签，project标签内容是
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ 解决方法：在build标签内添加
+ <build>
+    <finalName>GTJA</finalName>
+    <pluginManagement>
+    	<plugins>
+    		<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.18.1</version>
+					<configuration>
+						<useFile>false</useFile>
+						<disableXmlReport>true</disableXmlReport>
+					</configuration>
+				</plugin>
+    	</plugins>
+    </pluginManagement>
+  </build>
+  
+4`    maven工程properties->resource 设置编码格式， 工程中的每个文件的properties->resource 设置编码格式，两个格式需要匹配
+                        -> targeted runtimes 设置为和build path 中一样的 服务器环境
+                        -> project facets 设置java 版本等各种项目版本问题
