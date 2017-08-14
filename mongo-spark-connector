@@ -1,0 +1,49 @@
+mongo-spark (homepage)
+The official MongoDB Spark Connector
+
+@mongodb / (20)
+
+The official MongoDB Spark Connector.
+https://docs.mongodb.com/spark-connector/
++----------------------+----------+
+| Mongo-Spark | Spark  |
++----------------------+----------+
+|                2.2.0 |   2.2.0 |
+|                2.1.0 |   2.1.0 |
+|                1.1.0 |   1.6.x |
++----------------------+----------+
+Tags
+
+    2|Spark SQL
+    2|MongoDB
+    2|nosql
+    2|Official
+
+How to
+
+Include this package in your Spark Applications using:
+spark-shell, pyspark, or spark-submit
+
+> $SPARK_HOME/bin/spark-shell --packages org.mongodb.spark:mongo-spark-connector_2.10:2.2.0
+
+Releases
+
+Version: 2.2.0-s_2.10 ( e8a7ee | zip | jar ) / Date: 2017-07-13 / License: Apache-2.0 / Scala version: 2.10
+
+Version: 2.2.0-s_2.11 ( e8a7ee | zip | jar ) / Date: 2017-07-13 / License: Apache-2.0 / Scala version: 2.11
+
+Version: 2.1.0-s_2.10 ( 589202 | zip | jar ) / Date: 2017-07-12 / License: Apache-2.0 / Scala version: 2.10
+
+Version: 2.1.0-s_2.11 ( 589202 | zip | jar ) / Date: 2017-07-12 / License: Apache-2.0 / Scala version: 2.11
+
+Version: 2.0.0-s_2.10 ( 67e62f | zip | jar ) / Date: 2016-11-01 / License: Apache-2.0 / Scala version: 2.10
+
+Version: 2.0.0-s_2.11 ( 67e62f | zip | jar ) / Date: 2016-11-01 / License: Apache-2.0 / Scala version: 2.11
+
+Version: 1.1.0-s_2.10 ( eb5b8e | zip | jar ) / Date: 2016-09-06 / License: Apache-2.0 / Scala version: 2.10
+
+Version: 1.1.0-s_2.11 ( eb5b8e | zip | jar ) / Date: 2016-09-06 / License: Apache-2.0 / Scala version: 2.11
+
+Version: 1.0.0-s_2.10 ( 637d26 | zip | jar ) / Date: 2016-06-29 / License: Apache-2.0 / Scala version: 2.10
+
+Version: 1.0.0-s_2.11 ( 637d26 | zip | jar ) / Date: 2016-06-29 / License: Apache-2.0 / Scala version: 2.11
