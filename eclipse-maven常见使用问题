@@ -51,6 +51,15 @@ http://blog.csdn.net/jay_1989/article/details/52687934
 http://blog.csdn.net/xubo245/article/details/51356198
 http://blog.csdn.net/lwb314/article/details/51062356
 
+    1、test范围指的是测试范围有效，在编译和打包时都不会使用这个依赖  
+    2、compile范围指的是编译范围有效，在编译和打包时都会将依赖存储进去  
+    3、provided依赖：在编译和测试的过程有效，最后生成war包时不会加入，诸如：servlet-api，因为servlet-api，tomcat等web服务器已经存在了，如果再打包会冲突  
+    4、runtime在运行的时候依赖，在编译的时候不依赖  
+       
+       
+    默认的依赖范围是compile  
+
+
 
 7. web工程必须选择war包打包方式，否则运行时会报dispatcherservlet classnotfound异常
 
