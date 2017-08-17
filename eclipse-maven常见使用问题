@@ -53,3 +53,24 @@ http://blog.csdn.net/lwb314/article/details/51062356
 
 
 7. web工程必须选择war包打包方式，否则运行时会报dispatcherservlet classnotfound异常
+
+8.解决spark -cdh依赖 配置库，保证库里有所需要的所有的依赖
+设置maven代理，设置eclipse代理
+<repositories>
+  	<repository>
+  		<id>
+  			maven2
+  		</id>
+  		<url>
+  			https://repo.maven.apache.org/maven2/
+  		</url>
+  	</repository>
+  	<repository>
+  		<id>
+  			cloudera
+  		</id>
+  		<url>
+  			https://repository.cloudera.com/artifactory/cloudera-repos/
+  		</url>
+  	</repository>
+  </repositories>
