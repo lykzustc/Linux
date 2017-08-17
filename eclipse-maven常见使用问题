@@ -50,3 +50,6 @@ http://blog.csdn.net/jay_1989/article/details/52687934
 6. assembly打包    http://www.cnblogs.com/justinzhang/p/4983633.html
 http://blog.csdn.net/xubo245/article/details/51356198
 http://blog.csdn.net/lwb314/article/details/51062356
+
+
+7. web工程必须选择war包打包方式，否则运行时会报dispatcherservlet classnotfound异常
